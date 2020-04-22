@@ -10,8 +10,6 @@
 
 `src/config` - manages routes via the application.
 
-`src/config/routes.js` - switching between pages. Routes are defined as separate objects and added to the routes list.
-
 `src/pages` - contains all pages folders. Each page has separate folder. All pages are exported as default and passed upwards in `index.js`. If you add new page the steps will be as follows:
 1) Create new folder inside `pages/` with the name of the page - for example `Foo`
 2) create `index.js` inside `pages/Foo/` => you have `pages/Foo/index.js`
