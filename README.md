@@ -1,4 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project architecture:
+public - holds public files.
+
+src/index.js - the root of our app. 
+
+src/index.css - currently there are the main color constants for the project. This is the file to me modified later on while redesigning.
+
+src/components - folder to hold specific components used in the whole project for usability.
+
+src/config - manages routes via the application.
+
+src/config/routes.js - switching between pages. Routes are defined as separate objects and added to the routes list.
+
+src/pages - contains all pages folders. Each page has separate folder. All pages are exported as default and passed upwards in index.js. If you add new page the steps will be as follows:
+1) Create new folder inside pages/ with the name of the page - for example Foo
+2) create index.js inside pages/Foo/ => you have pages/Foo/index.js
+3) implement your component(s) inside. Let's say you have default component called Foo again.
+4) export the default component from your page in pages/index.js - for example `export { default as Foo } from './Foo';`
+
+src/utils - some helping functions
+
+If we have the need for global constants, we will create src/constants.js
 
 ## Available Scripts
 
