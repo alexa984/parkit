@@ -1,5 +1,6 @@
-## Project architecture:
-public - holds public files.
+## Project file architecture:
+
+`public` - holds public files.
 
 `src/index.js` - the root of our app. 
 
