@@ -223,7 +223,7 @@
   margin: 0 auto;
 }
 .carouselCustom{
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color:#F4F9FF;
   width: 60%;
   height: 15em;
   color: var(--blue);
@@ -248,6 +248,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 
 /*Responsiveness of top blue section*/
 

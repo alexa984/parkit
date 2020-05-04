@@ -1,0 +1,186 @@
+.searchPanel{
+  display: flex;
+  margin-top: 2em;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.searchBar{
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+
+.searchInput {
+  padding-left: 2.375rem;
+  border-radius: 1.5em;
+  line-height: 3rem;
+  width: 80%;
+  border: none;
+  -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.searchIcon {
+  position: absolute;
+  padding-top: 1em;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  margin: 0 auto;
+  pointer-events: none;
+  color: var(--blue);
+}
+
+.searchButtons{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.parkingButton{
+  width: 8em;
+  height: 2em;
+  padding: 0.5em;
+  background-color: white;
+  font-size: 0.96em;
+  color: var(--blue);
+  background-image: url('../../images//icons/parking_sign.png');
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position-x: 0.4em;
+  background-position-y: 0.2em;
+  margin: 0.5em 1em;
+  border-radius: 1em;
+  border: none;
+  -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dotsButton{
+  width: 8em;
+  height: 2em;
+  padding: 0.5em;
+  background-color: white;
+  font-size: 0.96em;
+  color: var(--blue);
+  background-image: url('../../images//icons/Three-Dots.png');
+  background-size: 4px;
+  background-repeat: no-repeat;
+  background-position-x: 0.4em;
+  background-position-y: 0.4em;
+  margin: 0.5em 1em;
+  border-radius: 1em;
+  border: none;
+  -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.parkingButton:hover, .dotsButton:hover {
+  transform: scale(1.3);
+  transition: all ease-in-out .3s;
+}
+
+.placeCard:hover, .faveButton:hover{
+  transform: scale(1.2);
+  transition: all ease-in-out .3s;
+}
+
+.placesCards{
+  display: flex;
+  flex-direction: row;
+  margin: 2em auto;
+}
+
+.placeCard{
+  width: 8em;
+  height: 12em;
+  background-color: #5CA1DC;
+  color: white;
+  font-weight: bold;
+  padding-top: 4em;
+  border-radius: 1.7em;
+  border: none;
+  margin-left: 1em;
+  box-shadow: 6px 0px #4195DC;
+}
+
+.placeCard:first-child{
+  background-image: url('../../images/icons/restaurant.svg');
+  background-repeat: no-repeat;
+  background-size: 3em;
+  background-position-x: 1em;
+  background-position-y: 1em;
+}
+
+.placeCard:nth-child(2){
+  background-image: url('../../images/icons/Coffee.svg');
+  background-repeat: no-repeat;
+  background-size: 3em;
+  background-position-x: 1em;
+  background-position-y: 1em;
+  background-color: #62ADEE;
+}
+
+.placeCard:nth-child(3){
+  background-image: url('../../images/icons/Cinema.svg');
+  background-repeat: no-repeat;
+  background-size: 3em;
+  background-position-x: 1em;
+  background-position-y: 1em;
+  background-color: #7BC0FD;
+}
+
+.placeCard p{
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+.favourites{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.favouriteButtons{
+  display:flex;
+  flex-direction: column;
+}
+
+.favourites h5{
+  text-align: left;
+  color: var(--dark-grey);
+}
+
+.faveButton{
+  background-color: white;
+  border:none;
+  color: var(--blue);
+  background-image: url('../../images//icons/location.svg');
+  text-align: left;
+  padding: 0.2em 0 0.2em 2em;
+  background-size: 1em;
+  background-repeat: no-repeat;
+  background-position-x: 0.4em;
+  background-position-y: 0.4em;
+  margin-bottom: 0.1em;
+  /*-webkit-box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.44);
+  -moz-box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.44);
+  box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.44);*/
+}
+
+.faveButton p{
+  color: var(--dark-grey);
+}
+
+.faveButton div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
