@@ -86,6 +86,11 @@
   margin-bottom: 0.1em;
 }
 
+/*not used currently*/
+.filterChoiceClicked{
+  background-color: var(--blue);
+}
+
 .filterChoice:hover{
   transform: scale(1.2);
   transition: all ease-in-out .3s;
