@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {
   Landing,
   Account,
-  Map
+  Map,
+  AddVehicle,
+  AddSubscription
 } from 'pages';
 
 class App extends React.Component {
@@ -12,6 +14,12 @@ class App extends React.Component {
       <Router>
         <div>
           <Switch>
+          <Route path="/addsubscription">
+              <AddSubscription />
+            </Route>
+          <Route path="/addvehicle">
+              <AddVehicle />
+            </Route>
             <Route path="/profile">
               <Account />
             </Route>

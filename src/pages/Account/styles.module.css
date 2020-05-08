@@ -1,21 +1,16 @@
 .flexContainer{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0;
-}
-
-.flexContainer img{
-    width: 100%;
-    height: 100%;
-}
-
-.manageMap{
-    display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0;
 }
+
+h1{
+    margin: 2em auto;
+    color: var(--blue);
+    text-transform: uppercase;
+}
+
 
 
 @media only screen and (max-width: 768px){

@@ -86,12 +86,16 @@
   margin-bottom: 0.1em;
 }
 
-/*not used currently*/
-.filterChoiceClicked{
+/*The clicked buttons could be toggled with this class with some JS, but for now this works.
+Only drawback is that the don't remain blue once we choose another filter from the accordion*/
+.fc1:focus-within { 
   background-color: var(--blue);
+  color: white;
+  border-radius: 1em;
+  background-blend-mode: color-dodge;
 }
 
-.filterChoice:hover{
+.fc1:hover{  
   transform: scale(1.2);
   transition: all ease-in-out .3s;
 }

@@ -18,16 +18,16 @@ render() {
         <input type="text" className={styles.searchInput} placeholder="Search"></input>
       </div>
       <div className={styles.searchButtons}>
-        <button className={styles.dotsButton}>See all spots</button>
-        <button className={styles.parkingButton}>3 min.</button>
-        <button className={styles.parkingButton}>5 min.</button>
-        <button className={styles.parkingButton}>10 min.</button>
+        <button className={`${styles.dotsButton} ${styles.fc1}`}>See all spots</button>
+        <button className={`${styles.parkingButton} ${styles.fc1}`}>3 min.</button>
+        <button className={`${styles.parkingButton} ${styles.fc1}`}>5 min.</button>
+        <button className={`${styles.parkingButton} ${styles.fc1}`}>10 min.</button>
       </div>
       <div className={styles.searchButtons}>
-        <button className={styles.parkingButton}>Home</button>
-        <button className={styles.parkingButton}>Univesity</button>
-        <button className={styles.parkingButton}>Office</button>
-        <button className={styles.parkingButton}>Fitness</button>
+        <button className={`${styles.parkingButton} ${styles.fc1}`}>Home</button>
+        <button className={`${styles.parkingButton} ${styles.fc1}`}>Univesity</button>
+        <button className={`${styles.parkingButton} ${styles.fc1}`}>Office</button>
+        <button className={`${styles.parkingButton} ${styles.fc1}`}>Fitness</button>
       </div>
 
       <AddFilter></AddFilter>
@@ -46,7 +46,13 @@ render() {
           <button className={styles.faveButton}>Office<div><p>bul. Vitosha 87</p><p>2.4 km</p></div></button>
         </div>
       </div>
+
+
+       {/* TODO */}
+      <button className={styles.pay}>Pay for place</button>
+
     </div>
+
 );
 }
 }

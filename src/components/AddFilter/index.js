@@ -40,10 +40,10 @@ render() {
                   <Accordion.Collapse eventKey="1">
                     <Card.Body>
       
-                      <button className={`${styles.filterChoice} ${styles.motorbike}`}>Kawasaki Z900</button>
-                      <button className={`${styles.filterChoice} ${styles.smallCar}`}>Nissan Micra</button>
-                      <button className={`${styles.filterChoice} ${styles.smallCar}`}>Toyota Augo</button>
-                      <button className={`${styles.filterChoice} ${styles.suv}`}>Volvo XC90</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.motorbike}`}>Kawasaki Z900</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.smallCar}`}>Nissan Micra</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.smallCar}`}>Toyota Augo</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.suv}`}>Volvo XC90</button>
                       
                     </Card.Body>
                   </Accordion.Collapse>
@@ -59,12 +59,12 @@ render() {
                   <Accordion.Collapse eventKey="2">
                     <Card.Body>
 
-                      <button className={`${styles.filterChoice} ${styles.motorbike}`}>Motorbike</button>
-                      <button className={`${styles.filterChoice} ${styles.smallCar}`}>Small Car</button>
-                      <button className={`${styles.filterChoice} ${styles.longCar}`}>Long Car</button>
-                      <button className={`${styles.filterChoice} ${styles.suv}`}>SUV</button>
-                      <button className={`${styles.filterChoice} ${styles.bus}`}>Bus</button>
-                      <button className={`${styles.filterChoice} ${styles.cargoTruck}`}>Cargo truck</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.motorbike}`}>Motorbike</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.smallCar}`}>Small Car</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.longCar}`}>Long Car</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.suv}`}>SUV</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.bus}`}>Bus</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.cargoTruck}`}>Cargo truck</button>
 
                     </Card.Body>
                   </Accordion.Collapse>
@@ -81,10 +81,10 @@ render() {
                   <Accordion.Collapse eventKey="3">
                     <Card.Body>
 
-                      <button className={`${styles.filterChoice} ${styles.petrol}`}>Petrol</button>
-                      <button className={`${styles.filterChoice} ${styles.diesel}`}>Diesel</button>
-                      <button className={`${styles.filterChoice} ${styles.gas}`}>Gas</button>
-                      <button className={`${styles.filterChoice} ${styles.electric}`}>Electric</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.petrol}`}>Petrol</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.diesel}`}>Diesel</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.gas}`}>Gas</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.electric}`}>Electric</button>
 
                     </Card.Body>   
                   </Accordion.Collapse>
@@ -100,9 +100,9 @@ render() {
                   <Accordion.Collapse eventKey="4">
                     <Card.Body>
 
-                    <button className={`${styles.filterChoice} ${styles.secure}`}>Secure</button>
-                      <button className={`${styles.filterChoice} ${styles.disabled}`}>Disabled</button>
-                      <button className={`${styles.filterChoice} ${styles.charge}`}>Charger</button>
+                    <button className={`${styles.filterChoice} ${styles.fc1} ${styles.secure}`}>Secure</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.disabled}`}>Disabled</button>
+                      <button className={`${styles.filterChoice} ${styles.fc1} ${styles.charge}`}>Charger</button>
       
                     </Card.Body>
 

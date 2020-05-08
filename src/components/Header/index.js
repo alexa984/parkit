@@ -10,7 +10,7 @@ class Header extends React.Component {
 render() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className={styles.navigationHeader}>
-        <Nav className="mr-auto">
+        <Nav className="mr-auto" className={styles.fixBootstrapFlex}>
           <img src={logo} alt="logo" className={styles.logo} />
           <Navbar.Brand href="/" className={styles.navTitle}>ParkIt</Navbar.Brand>
       </Nav>

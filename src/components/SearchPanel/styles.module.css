@@ -91,6 +91,13 @@
   transition: all ease-in-out .3s;
 }
 
+.fc1:focus-within { 
+  background-color: var(--blue);
+  color: white;
+  border-radius: 1em;
+  background-blend-mode: color-dodge;
+}
+
 .placesCards{
   display: flex;
   flex-direction: row;
@@ -181,6 +188,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.pay{
+  width: 20%;
+  margin: 0 auto;
 }
 
 

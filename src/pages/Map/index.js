@@ -16,7 +16,7 @@ return (
   <Header />
   <div className={styles.flexContainer}>
     {/* <img src={map} alt="map"/> */}
-    <MapContainer/>
+    <MapContainer className={styles.responsiveMap} />
     <div className={styles.manageMap}>
       <SearchPanel></SearchPanel>
     </div>
