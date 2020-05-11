@@ -4,7 +4,6 @@ import { Header } from 'components';
 import styles from './styles.module.css';
 import SearchPanel from 'components/SearchPanel';
 import MapContainer from 'components/MapContainer';
-import { ThemeProvider } from 'react-bootstrap';
 
 export default class Map extends React.Component {
   state = {
