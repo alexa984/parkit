@@ -27,31 +27,50 @@ class MapContainer extends React.Component {
 
   render() {
     const { homeSelected, uniSelected, officeSelected } = this.props;
+    const uniAddr = {
+      lat: 42.6743677,
+      lng: 23.3282965
+    };
+    const homeAddr = {
+      lat: 42.6774917,
+      lng: 23.3085355
+    };
+    const officeAddr = {
+      lat: 42.6835888,
+      lng: 23.3137395
+    };
+
+    let currentCenter = this.props.center;
+    if (homeSelected) {
+      currentCenter = homeAddr;
+    } else if (uniSelected) {
+      currentCenter = uniAddr;
+    } else if (officeSelected) {
+      currentCenter = officeAddr;
+    }
+
     return (
       <div className={styles.mapStyle}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyCTAR3vktkmgiq934W4os89KkfI3tsLaKk' }}
-          defaultCenter={this.props.center}
+          center={currentCenter}
           defaultZoom={this.props.zoom}
         >
           {uniSelected &&
             <PinnedPlace
-              lat={42.6743677}
-              lng={23.3282965}
+              {...uniAddr}
               text="University"
             />
           }
           {homeSelected &&
             <PinnedPlace
-              lat={42.6774917}
-              lng={23.3085355}
+              {...homeAddr}
               text="Home"
             />
           }
           {officeSelected &&
             <PinnedPlace
-              lat={42.6835888}
-              lng={23.3137395}
+              {...officeAddr}
               text="Office"
             />
           }
