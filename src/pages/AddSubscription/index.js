@@ -20,7 +20,6 @@ export default class AddSubscription extends React.Component {
         </div>
 
         <div className={styles.selectSubscriptionType}>
-          <h3>Add</h3>
           <div className={styles.flexContainer}>
             <button className={`${styles.addSubscriptionBtn} ${styles.parkingCard}`}>
                 <p>Parking Card</p>
