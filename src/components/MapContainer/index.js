@@ -29,8 +29,6 @@ class MapContainer extends React.Component {
           <AnyReactComponent
             lat={42.698334}
             lng={23.319941}
-            text="My Marker"
-
           />
         </GoogleMapReact>
       </div>
