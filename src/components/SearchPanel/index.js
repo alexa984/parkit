@@ -39,9 +39,9 @@ class SearchPanel extends React.Component {
         <div className={styles.favourites}>
           <h5>Favourites</h5>
           <div className={styles.favouriteButtons}>
-            <button className={styles.faveButton}>Home<div><p>g.k. Ivan Vazov</p><p>7.3 km</p></div></button>
-            <button className={styles.faveButton}>University<div><p>bul. James Boucher 5</p><p>0 km</p></div></button>
-            <button className={styles.faveButton}>Office<div><p>bul. Vitosha 87</p><p>2.4 km</p></div></button>
+            <button className={styles.faveButton} onClick={this.props.selectHome}>Home<div><p>g.k. Ivan Vazov</p><p>7.3 km</p></div></button>
+            <button className={styles.faveButton} onClick={this.props.selectUni}>University<div><p>bul. James Boucher 5</p><p>0 km</p></div></button>
+            <button className={styles.faveButton} onClick={this.props.selectOffice}>Office<div><p>bul. Vitosha 87</p><p>2.4 km</p></div></button>
           </div>
         </div>
 
