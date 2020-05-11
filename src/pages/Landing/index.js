@@ -1,9 +1,10 @@
 import React from "react";
+import Carousel from 'react-bootstrap/Carousel'
+import * as cx from 'classnames';
 
 import { Header } from "components";
 
 import styles from "./styles.module.css";
-import home from "../../images/home.png";
 import appStore from "../../images/buttons/app-store.png";
 import googlePlay from "../../images/buttons/googlePlay.png";
 import phones from "../../images/phones.png";
@@ -12,9 +13,6 @@ import illustration2 from "../../images/parking-illustration2.png";
 import illustration3 from "../../images/parking-illustration3.png";
 import drone from "../../images/drone.png";
 import reviewsHeader from "../../images/reviewsheader.png";
-import quotes from "../../images/quotes.png";
-
-import Carousel from 'react-bootstrap/Carousel'
 
 export default class Landing extends React.Component {
   render() {
@@ -25,13 +23,13 @@ export default class Landing extends React.Component {
           <div className={styles.h1AndAppButtons}>
             <h1>Always searching<br></br>for that free<br></br>parking space?<br></br>Not anymore!</h1>
             <div className={styles.appButtons}>
-              <img src={appStore} alt="appStore"/>
-              <img src={googlePlay} alt="googlePlay"/>
+              <img src={appStore} alt="appStore" />
+              <img src={googlePlay} alt="googlePlay" />
             </div>
           </div>
-            <div className={styles.phones}>
-              <img src={phones} alt="phones"/>
-            </div>
+          <div className={styles.phones}>
+            <img src={phones} alt="phones" />
+          </div>
         </section>
         <section className={styles.services}>
           <div className={styles.leftServicesColumn}>
@@ -53,7 +51,7 @@ export default class Landing extends React.Component {
               <p>ParkIt’s On-Street Availability API uses<br></br>patented award winning machine<br></br>
                   learning technology to determine streets<br></br>with at least 1 open and legal on-street<br></br>parking space.</p>
             </div>
-              <img src={illustration1} alt="illustration1"/>
+            <img src={illustration1} alt="illustration1" />
           </div>
 
           <div className={styles.offStreet}>
@@ -63,10 +61,10 @@ export default class Landing extends React.Component {
                   learning technology to calculate the<br></br>probability of each individual parking<br></br>
                   lot/garage having at least 1 open<br></br>off-street parking space.</p>
             </div>
-              <img src={illustration2} alt="illustration2"/>
+            <img src={illustration2} alt="illustration2" />
           </div>
         </section>
-        <section className={styles.onOffStreetParking, styles.thirdIllustration}>
+        <section className={cx(styles.onOffStreetParking, styles.thirdIllustration)}>
           <div className={styles.onStreet}>
             <div className={styles.h2AndP}>
               <h2>Got a parking and<br></br>
@@ -82,7 +80,7 @@ export default class Landing extends React.Component {
                 that helps you park easily and gain peace<br></br>
                 of mind.</p>
             </div>
-              <img src={illustration3} alt="illustration3"/>
+            <img src={illustration3} alt="illustration3" />
           </div>
         </section>
         <section className={styles.mostPrecise}>
@@ -91,7 +89,7 @@ export default class Landing extends React.Component {
               <h2>The most precise<br></br>parking solution</h2>
               <p>ParkIt uses big data and AI innovation to bring<br></br>the most advanced and accurate parking<br></br>availability.</p>
             </div>
-            <img src={drone} alt="drone"/>
+            <img src={drone} alt="drone" />
           </div>
           <div className={styles.h2AndButtons}>
             <h2>ParkIt  processes real-time data from:</h2>
@@ -104,22 +102,22 @@ export default class Landing extends React.Component {
           </div>
         </section>
         <section className={styles.reviews}>
-          <img src={reviewsHeader} alt="reviewsHeader"/>
+          <img src={reviewsHeader} alt="reviewsHeader" />
           <Carousel className={styles.carouselCustom}>
             <Carousel.Item>
               <Carousel.Caption className={styles.carouselCaption}>
                 <p>"Super fast, simple, easy to find multiple choices in any given<br></br>area. A VERY powerful app!"</p>
-                  
+
                 <h3>Maria V.</h3>
               </Carousel.Caption>
-            </Carousel.Item>  
+            </Carousel.Item>
             <Carousel.Item>
               <Carousel.Caption className={styles.carouselCaption}>
                 <p>This app saves a great deal of time and promotes sustainability!</p>
                 <h3>Maria M.</h3>
               </Carousel.Caption>
-            </Carousel.Item>          
-        </Carousel>
+            </Carousel.Item>
+          </Carousel>
         </section>
       </>
     );

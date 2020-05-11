@@ -5,9 +5,9 @@ import styles from './styles.module.css';
 import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
-  
+
 class MapContainer extends React.Component {
-  
+
   static defaultProps = {
     center: {
       lat: 42.698334,
@@ -17,13 +17,9 @@ class MapContainer extends React.Component {
 
   };
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
-    
+
       <div className={styles.mapStyle}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyCTAR3vktkmgiq934W4os89KkfI3tsLaKk' }}
@@ -42,7 +38,7 @@ class MapContainer extends React.Component {
   }
 }
 
- 
+
 export default MapContainer;
 
 

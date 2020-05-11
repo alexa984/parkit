@@ -1,7 +1,6 @@
 import React from 'react';
-import { Container } from 'semantic-ui-react';
 
-import { Header} from 'components';
+import { Header } from 'components';
 import ProfileOptions from 'components/ProfileOptions';
 import UserPhotoAndName from 'components/UserPhotoAndName';
 import styles from './styles.module.css';
@@ -12,10 +11,10 @@ export default class Account extends React.Component {
   render() {
     return (
       <div className={styles.flexContainer}>
-      <Header />
+        <Header />
         <h1>My Account</h1>
-        <UserPhotoAndName/>
-        <ProfileOptions/>
+        <UserPhotoAndName />
+        <ProfileOptions />
       </div>
     );
   }
