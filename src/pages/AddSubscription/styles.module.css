@@ -83,24 +83,6 @@ h1{
     background-blend-mode: hard-light;
   }
 
-
-.parkingCard{
-  background-image: url('../../images/icons/ParkingSubscriptionIconWhite.svg');
-  background-repeat: no-repeat;
-  background-size: 2.5em;
-  background-position-x: 0.5em;
-  background-position-y: 0em;
-}
-
-
-.rc{
-  background-image: url('../../images//icons/RemoteControlWhite.svg');
-  background-repeat: no-repeat;
-  background-size: 2em !important;
-  background-position-x: 1em;
-  background-position-y: -0.2em;
-}
-
 .editIcon{
   width: 12em;
   height: 2em;
@@ -189,4 +171,16 @@ h1{
 
 .textField {
   padding-left: 3em;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.pushDown {
+  margin-top: 5% !important;
+}
+
+.cardTitle {
+  font-size: 14pt;
 }
