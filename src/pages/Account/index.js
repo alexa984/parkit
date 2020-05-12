@@ -10,12 +10,14 @@ export default class Account extends React.Component {
 
   render() {
     return (
-      <div className={styles.flexContainer}>
+      <>
         <Header />
-        <h1>My Account</h1>
-        <UserPhotoAndName />
-        <ProfileOptions />
-      </div>
+        <div className={styles.container}>
+          <h1>My Account</h1>
+          <UserPhotoAndName />
+          <ProfileOptions />
+        </div>
+      </>
     );
   }
 }
