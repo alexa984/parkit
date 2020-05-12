@@ -14,13 +14,13 @@
 
 
 .h1AndAppButtons{
-  color: white;
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
 .h1AndAppButtons h1{
+  color: white;
   font-size: 3.5em;
   font-weight: bold;
   margin: 2em auto 0 auto;

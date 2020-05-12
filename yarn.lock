@@ -8805,10 +8805,10 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-toastify@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-6.0.1.tgz#c6d7ca3fae5ef264e814fd9a83ae7be298d57c0c"
-  integrity sha512-P/WHou5+d8tlcUAyObgbo4MKN/BHV5lX428H/ICHVRF3B7ieWIfriAOdkvO35YAzlJe5y8DToCmiFg87gf2Etw==
+react-toastify@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-6.0.2.tgz#db941d3b51997ccbd53cfd39e94ab2f49145a515"
+  integrity sha512-hcBdCJOOceix6pfdk073VoDlSjTfvMqDULvrJtnny6LQxJJI8jFtOVi3mwX5h2fYl6PXes5M51gkvn8eDW6zQw==
   dependencies:
     classnames "^2.2.6"
     prop-types "^15.7.2"
