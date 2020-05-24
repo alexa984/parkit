@@ -93,6 +93,8 @@ a.button{
 
 .centerModal {
   right: 0;
+  margin: 4rem auto !important;
+  height: 450px;
 }
 
 .input{
