@@ -61,7 +61,7 @@ overflow-y:scroll doesn't work for some reason*/
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
+  transition: opacity 200ms;
   visibility: hidden;
   opacity: 0;
 }
@@ -72,11 +72,12 @@ overflow-y:scroll doesn't work for some reason*/
 }
 
 .popup {
-  margin: 70px auto;
+  margin: 70px auto 0px auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
   width: 30%;
+  min-width: 400px;
   position: relative;
   transition: all 5s ease-in-out;
   height: fit-content;
