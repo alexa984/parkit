@@ -24,12 +24,20 @@ export default class AddPayment extends React.Component {
     })
   }
 
+  clearAndClose = (outerCloseMethod) => {
+    this.setState({
+      cardChecked: false,
+      payPalChecked: false
+    })
+    outerCloseMethod()
+  }
+
   render() {
     const { open, onClose } = this.props;
     const { cardChecked, payPalChecked } = this.state;
 
     return (
-      <Modal size="small" open={open} closeIcon={true} centered={true} className={styles.centerModal} onClose={onClose}>
+      <Modal open={open} closeIcon className={styles.centerModal} onClose={() => this.clearAndClose(onClose)}>
         <Modal.Header>Add Payment Service</Modal.Header>
         <Modal.Content image>
           <Modal.Description className="center">
@@ -67,7 +75,7 @@ export default class AddPayment extends React.Component {
         {(payPalChecked || cardChecked) && (
           <Modal.Actions>
             <a className={styles.button} href="/profile#popup3">
-              <button className={styles.addPayment} onClick={onClose} />
+              <button className={styles.addPayment} onClick={() => this.clearAndClose(onClose)} />
             </a>
           </Modal.Actions>
         )}
