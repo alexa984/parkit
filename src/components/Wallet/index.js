@@ -1,9 +1,18 @@
 
 import React from 'react';
+import AddPaymentModal from '../AddPaymentModal';
 import styles from './styles.module.css';
 
 
 class Wallet extends React.Component {
+  state = {
+    modalOpen: false
+  }
+
+  openCloseModal = () => {
+    this.setState(prevState => ({ modalOpen: !prevState.modalOpen }))
+  }
+
   render() {
     return (
       <div className={styles.cards}>
@@ -32,10 +41,10 @@ class Wallet extends React.Component {
 
         </div>
 
-        <a className={styles.button} href="/add-payment">
-          <button className={styles.addPayment} />
-        </a>
-
+        <div className={styles.button}>
+          <button className={styles.addPayment} onClick={this.openCloseModal} />
+        </div>
+        <AddPaymentModal open={this.state.modalOpen} onClose={this.openCloseModal} />
 
       </div>
     );

@@ -30,14 +30,14 @@ export default class AddSubscription extends React.Component {
         </div>
 
         <div className={styles.selectSubscriptionType}>
-          <Grid columns={4} className={styles.center}>
+          <Grid columns={4} className="center">
             <Grid.Row className={styles.pushDown}>
               <Grid.Column key={10} width={3} />
               <Grid.Column key={10} width={5}>
-                <Image src={ParkingSubscriptionIconWhite} alt="parking card" className={styles.center} />
+                <Image src={ParkingSubscriptionIconWhite} alt="parking card" className="center" />
               </Grid.Column>
               <Grid.Column key={2} width={5}>
-                <Image src={RemoteControl} alt="remote control" className={styles.center} />
+                <Image src={RemoteControl} alt="remote control" className="center" />
               </Grid.Column>
               <Grid.Column key={10} width={3} />
             </Grid.Row>
