@@ -3,3 +3,4 @@ export { default as Account } from './Account';
 export { default as Map } from './Map';
 export { default as AddVehicle } from './AddVehicle';
 export { default as AddSubscription } from './AddSubscription';
+export { default as AddPayment } from './AddPayment';

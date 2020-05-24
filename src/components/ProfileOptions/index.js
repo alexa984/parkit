@@ -1,9 +1,11 @@
 
 import React from 'react';
 
+import * as cx from 'classnames';
+
+import { Vehicles, Subscriptions, Wallet } from 'components';
+
 import styles from './styles.module.css';
-import Vehicles from 'components/Vehicles';
-import Subscriptions from 'components/Subscriptions';
 
 
 class ProfileOptions extends React.Component {
@@ -39,12 +41,22 @@ class ProfileOptions extends React.Component {
             </div>
           </div>
 
-          <button className={`${styles.accountSettingsBtn} ${styles.fc1} ${styles.wallet}`}>Wallet</button>
-
           <a className={styles.button} href="#popup3">
-            <button className={`${styles.accountSettingsBtn} ${styles.fc1} ${styles.subscriptions}`}>Parking subscriptions</button>
+            <button className={cx(styles.accountSettingsBtn, styles.fc1, styles.wallet)}>Wallet</button>
           </a>
           <div id="popup3" className={styles.overlay}>
+            <div className={styles.popup}>
+              <a className={styles.close} href="#">&times;</a>
+              <div className={styles.content}>
+                <Wallet />
+              </div>
+            </div>
+          </div>
+
+          <a className={styles.button} href="#popup4">
+            <button className={`${styles.accountSettingsBtn} ${styles.fc1} ${styles.subscriptions}`}>Parking subscriptions</button>
+          </a>
+          <div id="popup4" className={styles.overlay}>
             <div className={styles.popup}>
               <a className={styles.close} href="#">&times;</a>
               <div className={styles.content}>

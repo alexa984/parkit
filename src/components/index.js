@@ -5,4 +5,5 @@ export { default as ProfileOptions } from './ProfileOptions';
 export { default as SearchPanel } from './SearchPanel';
 export { default as Vehicles } from './Vehicles';
 export { default as UserPhotoAndName } from './UserPhotoAndName';
-
+export { default as Wallet } from './Wallet';
+export { default as Subscriptions } from './Subscriptions';

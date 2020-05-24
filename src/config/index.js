@@ -5,7 +5,8 @@ import {
   Account,
   Map,
   AddVehicle,
-  AddSubscription
+  AddSubscription,
+  AddPayment,
 } from 'pages';
 
 class App extends React.Component {
@@ -14,11 +15,14 @@ class App extends React.Component {
       <Router>
         <div>
           <Switch>
-          <Route path="/addsubscription">
+            <Route path="/addsubscription">
               <AddSubscription />
             </Route>
-          <Route path="/addvehicle">
+            <Route path="/addvehicle">
               <AddVehicle />
+            </Route>
+            <Route path="/add-payment">
+              <AddPayment />
             </Route>
             <Route path="/profile">
               <Account />

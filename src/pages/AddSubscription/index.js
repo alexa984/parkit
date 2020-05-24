@@ -84,7 +84,7 @@ export default class AddSubscription extends React.Component {
         </div>
 
 
-        <a className={styles.button} href="/profile#popup3">
+        <a className={styles.button} href="/profile#popup4">
           <button className={styles.addSubscription} onClick={this.showToast}></button>
         </a>
         {/* TODO? show success message when adding a subscription */}
