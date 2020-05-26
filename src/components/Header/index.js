@@ -11,12 +11,12 @@ class Header extends React.Component {
       <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className={styles.navigationHeader}>
         <Nav className="mr-auto">
           <img src={logo} alt="logo" className={styles.logo} />
-          <Navbar.Brand href="/" className={styles.navTitle}>ParkIt</Navbar.Brand>
+          <Navbar.Brand href="/home" className={styles.navTitle}>ParkIt</Navbar.Brand>
         </Nav>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className={styles.navLinkGroup}>
           <Nav className="ml-auto">
-            <Nav.Link href="/" className={styles.navLink}>Home</Nav.Link>
+            <Nav.Link href="/home" className={styles.navLink}>Home</Nav.Link>
             <Nav.Link href="/Map" className={styles.navLink}>Map</Nav.Link>
             <Nav.Link href="/profile/index.js" className={styles.navLink}>Profile</Nav.Link>
           </Nav>

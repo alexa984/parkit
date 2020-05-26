@@ -7,3 +7,4 @@ export { default as Vehicles } from './Vehicles';
 export { default as UserPhotoAndName } from './UserPhotoAndName';
 export { default as Wallet } from './Wallet';
 export { default as Subscriptions } from './Subscriptions';
+export { Input } from './Input';

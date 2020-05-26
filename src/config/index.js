@@ -6,6 +6,7 @@ import {
   Map,
   AddVehicle,
   AddSubscription,
+  Login
 } from 'pages';
 
 class App extends React.Component {
@@ -26,8 +27,11 @@ class App extends React.Component {
             <Route path="/map">
               <Map />
             </Route>
-            <Route path="/">
+            <Route path="/home">
               <Landing />
+            </Route>
+            <Route path="/">
+              <Login />
             </Route>
           </Switch>
         </div>
