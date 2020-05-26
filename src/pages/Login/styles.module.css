@@ -1,3 +1,15 @@
 .fit {
-    height: calc(100vh - 80px);
+    max-height: calc(100vh - 80px);
+}
+
+.input{
+    margin: 30px auto;
+    width: 60%;
+}
+
+.loginButton {
+    display: block !important;
+    margin: 5rem auto !important;
+    border-radius: 15rem !important;
+    padding: 1rem 4rem !important;
 }
