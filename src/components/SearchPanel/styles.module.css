@@ -178,8 +178,7 @@
   justify-content: space-between;
 }
 
-.pay{
-  margin: 0 auto !important;
+.selectedPlaceBtn{
   color: white !important;
   background-color: var(--blue) !important;
 }

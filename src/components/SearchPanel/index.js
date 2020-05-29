@@ -103,7 +103,12 @@ class SearchPanel extends React.Component {
         </div>
 
         {this.props.placeSelected && (
-          <Button className={styles.pay}>Pay for your parking place</Button>
+          <div className="center">
+            <Button className={styles.selectedPlaceBtn}>Navigate</Button>
+            <Button className={styles.selectedPlaceBtn}>
+              Pay for your parking place
+            </Button>
+          </div>
         )}
       </div>
     );
