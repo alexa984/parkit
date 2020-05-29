@@ -8,7 +8,9 @@ class SearchPanel extends React.Component {
     return (
       <div className={styles.searchPanel}>
         <Search
-          icon={<Icon name="search" color="blue" />}
+          icon={
+            <Icon name="search" color="blue" className={styles.searchIcon} />
+          }
           placeholder="Search..."
           size="large"
           className={styles.searchInput}
