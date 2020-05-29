@@ -45,14 +45,14 @@ a.button{
   margin: 2em;
 }
 
-.fc1:focus-within { 
+.fc1:focus-within {
   background-color: var(--blue);
   color: white;
   border-radius: 1em;
   background-blend-mode: color-dodge;
 }
-  
-.fc1:hover{  
+
+.fc1:hover{
   transform: scale(1.2);
   transition: all ease-in-out .3s;
 }
@@ -64,7 +64,7 @@ a.button{
   background-position-x: 1em;
   background-position-y: 2em;
 }
-  
+
 .payPal{
   background-image: url('../../images/payment_icons/PayPalLogo.svg');
   background-repeat: no-repeat;
@@ -94,7 +94,13 @@ a.button{
 .centerModal {
   right: 0;
   margin: 4rem auto !important;
-  height: 450px;
+  height: 460px !important;
+}
+
+@media only screen and (max-width: 765px){
+  .centerModal{
+    min-height: 70% !important;
+  }
 }
 
 .input{
