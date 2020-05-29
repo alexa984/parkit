@@ -79,7 +79,7 @@
   transition: all ease-in-out .3s;
 }
 
-.fc1:focus-within { 
+.fc1:focus-within {
   background-color: var(--blue);
   color: white;
   border-radius: 1em;
@@ -179,6 +179,7 @@
 }
 
 .pay{
-  width: 20%;
-  margin: 0 auto;
+  margin: 0 auto !important;
+  color: white !important;
+  background-color: var(--blue) !important;
 }
